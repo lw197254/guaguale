@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="umw-9a-Qrs">
+                                <rect key="frame" x="285" y="160" width="30" height="30"/>
+                                <state key="normal" title="重试"/>
+                                <connections>
+                                    <action selector="refreshClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h4B-AD-rPm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l3b-Nu-zjv">
+                                <rect key="frame" x="250" y="80" width="100" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="RKE-Tf-4Dv"/>
+                                    <constraint firstAttribute="width" constant="100" id="y1W-uq-1Ja"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pre10.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="FCe-j9-sre">
+                                <rect key="frame" x="250" y="80" width="100" height="60"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccN-Ox-0SM">
+                                <rect key="frame" x="285" y="506" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="drawLine:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ytL-eT-UJv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FCe-j9-sre" firstAttribute="centerX" secondItem="l3b-Nu-zjv" secondAttribute="centerX" id="3Z5-qZ-fVu"/>
+                            <constraint firstItem="FCe-j9-sre" firstAttribute="height" secondItem="l3b-Nu-zjv" secondAttribute="height" id="3sO-1L-EzG"/>
+                            <constraint firstItem="ccN-Ox-0SM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="47l-dG-mHJ"/>
+                            <constraint firstItem="l3b-Nu-zjv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="9oM-I4-Msc"/>
+                            <constraint firstItem="umw-9a-Qrs" firstAttribute="top" secondItem="FCe-j9-sre" secondAttribute="bottom" constant="20" id="AUh-mp-38s"/>
+                            <constraint firstItem="l3b-Nu-zjv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lmd-zp-9SF"/>
+                            <constraint firstItem="umw-9a-Qrs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aMQ-i8-KPf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ccN-Ox-0SM" secondAttribute="bottom" constant="64" id="dNZ-vb-eg1"/>
+                            <constraint firstItem="FCe-j9-sre" firstAttribute="centerY" secondItem="l3b-Nu-zjv" secondAttribute="centerY" id="gNM-Ay-Giw"/>
+                            <constraint firstItem="FCe-j9-sre" firstAttribute="width" secondItem="l3b-Nu-zjv" secondAttribute="width" id="hdh-MC-zDQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="beforeImageView" destination="FCe-j9-sre" id="3TH-VO-MDG"/>
+                        <outlet property="titleLabel" destination="l3b-Nu-zjv" id="MxJ-lb-e97"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="319"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pre10.jpg" width="480" height="719"/>
+    </resources>
+</document>
