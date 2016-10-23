@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //buzhidaonizaiganshenme
     ///zhendebuzhidao zenmeban
     // Do any additional setup after loading the view from its nib.
 }
