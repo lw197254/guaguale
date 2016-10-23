@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //nihao
     // Do any additional setup after loading the view from its nib.
 }
 - (IBAction)backClicked:(UIButton *)sender {
